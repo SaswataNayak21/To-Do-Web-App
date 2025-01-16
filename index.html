@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-List | WebApp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="checklist.png">
+
+</head>
+
+<body>
+  <!-- Header with Navigation -->
+  <div class="welcome-container">
+    <h1>Welcome to Todoo!</h1>
+    <nav class="header-nav">
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+    </nav>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- To-Do App Section -->
+    <div class="stats-container">
+      <div class="details">
+        <h1>My To-Do List</h1>
+        <p>Keep the work going!</p>
+        <div id="progressBar">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <div class="stats-numbers">
+        <p id="numbers">0 / 0</p>
+      </div>
+    </div>
+
+    <form action="">
+      <input type="text" id="taskInput" placeholder="Write your task">
+      <button id="newTask" type="submit">+</button>
+    </form>
+    <ul id="task-list"></ul>
+    <button id="deleteAll" type="button">Delete All</button>
+  </div>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features-container">
+      <div class="feature">
+        <h3>Easy Task Management</h3>
+        <p>Add, edit, and organize your tasks seamlessly.</p>
+      </div>
+      <div class="feature">
+        <h3>Progress Tracking</h3>
+        <p>Visualize your progress with an intuitive progress bar.</p>
+      </div>
+      <div class="feature">
+        <h3>Cloud Sync</h3>
+        <p>Your tasks are saved and accessible anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"This app has completely transformed how I manage my daily tasks!"</p>
+        <h4>- Richa Singh</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The progress bar motivates me to complete my tasks faster. Highly recommend it!"</p>
+        <h4>- Abhay Kundu</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section id="cta">
+    <h2>Ready to Boost Your Productivity?</h2>
+    <p>Start managing your tasks like a pro with our free-to-use To-Do App.</p>
+    <br>
+    <br>
+    <a href="./index.html" class="cta-button">Get Started Now</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.6.0/tsparticles.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>

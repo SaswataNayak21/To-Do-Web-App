@@ -1,0 +1,303 @@
+:root {
+    --background: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    /* Reduced top margin from 120px to 60px */
+    max-width: 300px;
+}
+#deleteAll {
+    display: none; /* Hide initially */
+  }
+  
+.stats-container {
+    padding: 30px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+#progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(43, 99, 136);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 50%;
+    height: 20px;
+    background-color: var(--text);
+    border-radius: 10px;
+    transition: all 0.3 ease;
+}
+
+.details {
+    width: 100%;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+form {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.taskItem {
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input {
+    width: 20px;
+    height: 20px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: teal;
+}
+
+.taskItem img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    /* Reduced top margin from 120px to 60px */
+    max-width: 550px;
+}
+
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#features,
+#testimonials,
+#cta {
+    margin-top: 60px;
+    background-color: var(--secondaryBackground);
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+
+.features-container,
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature,
+.testimonial {
+    background-color: var(--background);
+    border: 2px solid var(--purple);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    max-width: 300px;
+    text-align: center;
+}
+
+#cta {
+    background-color: var(--purple);
+    color: var(--background);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: var(--teal);
+    color: var(--background);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: var(--text);
+    color: var(--purple);
+    transition: 0.3s ease-in-out;
+}
+
+.welcome-container {
+    background: linear-gradient(135deg, var(--purple), var(--teal));
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.header-nav {
+    margin-top: 20px;
+}
+
+.header-nav a {
+    margin: 0 10px;
+    color: var(--text);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    color: var(--teal);
+    transition: 0.3s ease-in-out;
+}
+.congrats-message {
+    background-color: rgb(137, 226, 233);
+    color: var(--background);
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#deleteAll {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+  }
+  
+  #deleteAll:hover {
+    background-color: #e60000;
+  }
+  
+  #deleteAll:active {
+    background-color: #cc0000;
+    transform: scale(0.98);
+  }
+  
